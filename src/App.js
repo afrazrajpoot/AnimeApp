@@ -47,8 +47,8 @@ function App() {
 
         <div className="w-full px-[3vw] md:px-0 flex md:justify-center mt-[15vw] md:mt-[10vw]">
         {animeInfo && <main className="w-full z-40 h-screen fixed bg-gray-700 top-0 flex justify-center items-center opacity-80">
-          <section className="bg-[#F9F6EE] relative flex items-center justify-center p-[3vw] rounded-xl w-[32vw] h-[32vw]">
-            <span onClick={()=>setAnimeInfo(null)} className="text-[1.3vw] text-gray-700 font-semibold absolute top-[1vw] right-[1vw] p-[0.5vw] cursor-pointer hover:bg-gray-400 rounded-md h-[2vw] w-[2vw] flex items-center justify-center">X</span>
+          <section className="bg-[#F9F6EE] relative flex items-center justify-center p-[3vw] rounded-xl w-[70vw] md:w-[32vw] h-[80vw] md:h-[32vw]">
+            <span onClick={()=>setAnimeInfo(null)} className="text-[4.3vw] md:text-[1.3vw] text-gray-700 font-semibold absolute top-[3vw] md:top-[1vw] right-[3vw] md:right-[1vw] p-[0.5vw] cursor-pointer hover:bg-gray-400 rounded-md h-[2vw] w-[2vw] flex items-center justify-center">X</span>
              <AnimeInfo animeInfo={animeInfo}/>
           </section>
         </main>}
