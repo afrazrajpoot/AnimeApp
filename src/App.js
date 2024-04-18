@@ -33,7 +33,14 @@ function App() {
   }
   useEffect(()=>{
     getData()
-  },[search])
+  }, [])
+  useEffect(() => {
+    const fetchData = setTimeout(() => {
+      getData();
+    }, 3000);
+
+    return () => clearTimeout(fetchData);
+  }, [search]);
 
   return (
     <main className="w-full overflow-hidden">
